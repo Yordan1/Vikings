@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Power Of Vikings</title>
+	    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="StyleSheets/StyleSheet_Main.css" />
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+            <div id="content"></div>
+        </div>
+        <section id="headSection">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navs"
+                        aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>    
+                        </button>
+                        <li><a href="#" id="hidens" class="navbar-brand">Welcome !</a> </li>                                             
+                    </div>                   
+                    <div id="navs" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">                        
+                        <li class="active" id="homeId"><a href="MainPage.html">Home</a></li>
+                        <li id="float-left">
+                            <a href="Views/Gods.html">
+                                Norse Gods And Goddesses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#lightbox" data-toggle="modal" data-slide-to="15">
+                                <span class="glyphicon glyphicon-picture"></span> Wallpapers
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+                                Great Vikings
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: lightgrey;"  aria-expanded="false">
+                                <li><a href="Views/KingRagnar.html">King Ragnar Lothbrok</a></li>
+                                <li><a href="Views/Bjorn.html">Bjorn Ironside</a></li>
+                                <li><a href="Views/Ivar.html">Ivar The Boneless</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="nav2">
+                        <li><a href="views/SignUp.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#" class="button" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in">
+                        </span>Login</a></li>
+                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog">
+                                <div class="loginmodal-container">
+                                    <h1>Login to Your Account</h1><br>
+                                    <form>
+                                        <input type="text" name="user" placeholder="Username">
+                                        <input type="password" name="pass" placeholder="Password">
+                                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                    </form>
+                                    <div class="login-help">
+                                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                    </ul>           
+                </div>
+            </div>
+            </nav>               
+        </section>
+        <!--Modal SlidShow-->
+        <div class="container">
+            <div class="modal fade and carousel slide" id="lightbox">
+                <div class="modal-dialog" id="modal-cont" style="width: 50%;">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <ol class="carousel-indicators">
+                                <li data-target="#lightbox" data-slide-to="0" class="active"></li>
+                                <li data-target="#lightbox" data-slide-to="1"></li>
+                                <li data-target="#lightbox" data-slide-to="2"></li>
+                                <li data-target="#lightbox" data-slide-to="3"></li>
+                                <li data-target="#lightbox" data-slide-to="4"></li>
+                                <li data-target="#lightbox" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="Pictures/gods_1.jpg"
+                                         alt="First slide" />
+                                    <div class="carousel-caption"><p>Valkyries</p></div>
+                                </div>
+                                <div class="item">
+                                    <img src="Pictures/bjorn_img.jpg" alt="Second slide">
+                                    <div class="carousel-caption">
+                                      <p>Bjorn Ironside</p></div>
+                                </div>
+                                <div class="item">
+                                    <img src="Pictures/vikings_3.jpg" alt="Third slide">
+                                    <div class="carousel-caption"><p>Aegir The god of the sea</p></div>
+                                </div>
+                                <div class="item">
+                                    <img src="Pictures/vikings_4.jpg" alt="four slide">
+                                    <div class="carousel-caption"><p>Vikings brothers</p></div>
+                                </div>
+                                <div class="item">
+                                    <img src="Pictures/vikings_5.jpg" alt="five slide">
+                                    <div class="carousel-caption"><p>King Rollo, King Ragnar and Lagarta the shieldmaiden</p></div>
+                                </div>
+                                <div class="item">
+                                    <img src="Pictures/thor_2.jpg" alt="six slide">
+                                    <div class="carousel-caption"><p>Ride against england</p></div>
+                                </div>
+                            </div><!-- /.carousel-inner -->
+                            <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div><!-- /.modal-body -->
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div><!-- /.container -->
+        <script src="app/Preloading JS/preloading.js"></script>
+    </body>
+</html>

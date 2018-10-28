@@ -1,0 +1,77 @@
+#head{
+  margin-left: 42%;
+}
+#head2{
+  margin-left: 18%;
+}
+#heat{
+  margin-left: 37%;
+}
+#img1{
+  width: 30%;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: alpha(opacity=50)
+}
+#img2{
+  width: 80%;
+}
+#jumbo{
+  margin-right: 25%;
+}
+#header1 {
+  margin-left: 38%;
+}
+#header2{
+  margin-left: 38%;
+}
+#header4{
+  margin-left: 36%;
+}
+#header5{
+  margin-left: 41%;
+}
+#header6{
+  margin-left: 33%;
+}
+#header3{
+  margin-left: 11%;
+}
+body{
+  background-image: url("../Pictures/gods_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+#cont1{
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+    transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(0);
+        }
+    }
+div {
+    animation: 2.6s ease-out 0s 1 slideInFromLeft;
+    }
+
+    @media (max-height: 807px) and (max-width: 814px) {
+      #header4{
+          margin-left: 38%;
+      }
+      #header1{
+        margin-left: 40%;
+    }
+      #header2{
+        margin-left: 40%;
+    }
+      #header6{
+        margin-left: 36%;
+    }
+  }
